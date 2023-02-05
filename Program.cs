@@ -19,6 +19,37 @@ namespace ProductReviewManagement
                 case 1:
                     ProductReviewManager.AddingProductReview(productReviews);
                     break;
+                case 2:
+                    ProductReviewManager.RetrieveTopThreeRating(productReviews);
+                    break;
+                case 3:
+                    ProductReviewManager.RetrieveRecordsBasedOnRatingAndProductId(productReviews);
+                    break;
+                case 4:
+                    ProductReviewManager.CountingProductId(productReviews);
+                    break;
+                case 5:
+                    ProductReviewManager.RetrieveOnlyProductIdAndReviews(productReviews);
+                    break;
+                case 6:
+                    ProductReviewManager.SkipTopFiveRecords(productReviews);
+                    break;
+                case 7:
+                    ProductReviewManager.AddingProductReview(productReviews);
+                    ProductReviewManager.CreateDataTable(productReviews);
+                    break;
+                case 8:
+                    //DataTable dt = new DataTable();
+                    //ProductReviewManager.AverageOfRating(dt);
+                    //break;
+                    ProductReviewManager.ReturnsOnlyIsLikeFieldAsTrue();
+                    ProductReviewManager.AverageOfRating();
+                    break;
+                case 9:
+                    ProductReviewManager.ReturnsReviewMessageContainsGood();
+                    break;
+
+
             }
         }
     }
